@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./stylelogin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <a href="./homepage.html" class="back-home">
+      <img id="back-btn" src="../img/back.png" alt="Back" />
+      <span>Homepage</span>
+    </a>
+    <h2>LOGIN PAGE</h2>
+    <form method="post" class="login">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Nhập email của bạn"
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Nhập mật khẩu"
+      />
+      <br />
+      <input
+        type="button"
+        id="submit"
+        value="Login"
+        onclick="window.location.href = 'adminpage.html'"
+      />
+    </form>
+  </body>
+</html>

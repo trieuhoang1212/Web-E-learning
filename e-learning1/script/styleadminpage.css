@@ -1,0 +1,27 @@
+/* ========== main ========== */
+body {
+  font-family: "Jetbrains mono", monospace;
+  font-weight: 300;
+  max-width: 1500px;
+  margin: 15px auto;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+:root {
+  --font-family: "Jetbrains mono", monospace;
+  --size-h2: 40px;
+  --size-back: 10px;
+  --font-regular: 18px;
+  --font-menu: 14px;
+  --font-color: #ffffff;
+  --font-color-secondary: #bdbdbd;
+  --primary-color: #3e3e3e;
+  --secondary-color: #888888;
+  --background-color: #232323;
+}
+
+a {
+  color: var(--font-color-secondary);
+  text-decoration: none;
+}

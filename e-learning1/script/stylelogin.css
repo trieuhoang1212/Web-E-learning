@@ -1,0 +1,86 @@
+/* ========== main ========== */
+body {
+  font-family: "Jetbrains mono", monospace;
+  font-weight: 300;
+  max-width: 1500px;
+  margin: 15px auto;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+:root {
+  --font-family: "Jetbrains mono", monospace;
+  --size-h2: 40px;
+  --size-back: 10px;
+  --font-regular: 18px;
+  --font-menu: 14px;
+  --font-color: #ffffff;
+  --font-color-secondary: #bdbdbd;
+  --primary-color: #3e3e3e;
+  --secondary-color: #888888;
+  --background-color: #232323;
+}
+
+a {
+  color: var(--font-color-secondary);
+  text-decoration: none;
+}
+
+/* backhome link */
+.back-home {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#back-btn {
+  width: var(--size-back);
+}
+
+form {
+  width: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* login form */
+.login {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+
+  background: #333;
+  color: white;
+}
+
+#username,
+#password {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+.login:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+#submit {
+  padding: 10px;
+  background: white;
+  color: black;
+  border: none;
+  font-family: var(--font-family);
+  border-radius: 5px;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+  font-size: var(--size-h2);
+}
