@@ -9,15 +9,23 @@ body {
 }
 
 :root {
+  /* size */
   --size-h2: 40px;
   --size-avt: 350px;
+  --size-back: 10px;
+  /* font */
   --font-regular: 18px;
   --font-menu: 14px;
   --font-color: #ffffff;
   --font-color-secondary: #bdbdbd;
+  /* colors */
   --primary-color: #3e3e3e;
   --secondary-color: #888888;
   --background-color: #232323;
+  /* border */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
 }
 
 li {
@@ -211,4 +219,47 @@ h2 {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  header {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+  .sub-menu,
+  .link-info {
+    justify-self: center;
+  }
+  .profile,
+  nav {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .profile-info {
+    border-left: none;
+    border-bottom: 4px solid #bdbdbd;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  :root {
+    --size-avt: 250px;
+    --size-h2: 30px;
+  }
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .sub-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
