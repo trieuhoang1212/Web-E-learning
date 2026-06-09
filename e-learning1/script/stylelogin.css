@@ -9,16 +9,23 @@ body {
 }
 
 :root {
-  --font-family: "Jetbrains mono", monospace;
+  /* size */
   --size-h2: 40px;
   --size-back: 10px;
+  --size-avt: 350px;
+  /* font */
   --font-regular: 18px;
   --font-menu: 14px;
   --font-color: #ffffff;
   --font-color-secondary: #bdbdbd;
+  /* colors */
   --primary-color: #3e3e3e;
   --secondary-color: #888888;
   --background-color: #232323;
+  /* border */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
 }
 
 a {
