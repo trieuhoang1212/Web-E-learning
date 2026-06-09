@@ -9,19 +9,125 @@ body {
 }
 
 :root {
-  --font-family: "Jetbrains mono", monospace;
+  /* size */
   --size-h2: 40px;
-  --size-back: 10px;
+  --size-avt: 350px;
+  /* font */
   --font-regular: 18px;
   --font-menu: 14px;
   --font-color: #ffffff;
   --font-color-secondary: #bdbdbd;
+  /* colors */
   --primary-color: #3e3e3e;
   --secondary-color: #888888;
   --background-color: #232323;
+  /* border */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
 }
 
 a {
   color: var(--font-color-secondary);
   text-decoration: none;
+}
+
+/* backhome link */
+.back-home {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#back-btn {
+  width: var(--size-back);
+}
+
+.admin-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: var(--background-color);
+  padding: 20px;
+  border-right: 1px solid var(--secondary-color);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.sidebar li:hover {
+  background-color: var(--primary-color);
+}
+
+h1 {
+  font-size: var(--size-h2);
+  margin-bottom: 20px;
+  max-width: fit-content;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input,
+select {
+  padding: 10px;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--font-color);
+  border-radius: 4px;
+}
+
+.btn-save {
+  padding: 10px;
+  background: var(--font-color-secondary);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.text-about {
+  height: 200px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--font-color);
+  border-radius: 4px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

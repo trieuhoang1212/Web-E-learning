@@ -1,19 +1,62 @@
 <!doctype html>
-<html>
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Admin Page</title>
-    <link rel="stylesheet" href="./styleadminpage.css" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styleadminpage.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
   <body>
-    <a href="./homepage.html" class="back-home">
-      <img id="back-btn" src="../img/back.png" alt="Back" />
-      <span>Homepage</span>
-    </a>
-    <h2>ADMIN PAGE</h2>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <a href="homepage.html" class="back-home">
+          <img id="back-btn" src="../img/back.png" alt="Back" />
+          <span>Homepage</span>
+        </a>
+        <nav>
+          <ul>
+            <li><i class="fa-solid fa-code"></i> Quản lý Kỹ năng</li>
+            <li><i class="fa-solid fa-folder"></i> Quản lý Dự án</li>
+            <li><i class="fa-solid fa-envelope"></i> Thông tin Liên hệ</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <h1>ADMIN DASHBOARD</h1>
+        <section class="admin">
+          <h3>About Me</h3>
+          <textarea
+            placeholder="Cập nhật thông tin giới thiệu về bạn..."
+            class="text-about"
+          ></textarea>
+          <button type="submit" class="btn-save">Save</button>
+        </section>
+
+        <section id="skills" class="admin">
+          <h3>Update Skills</h3>
+
+          <input type="text" placeholder="Tên kỹ năng" />
+          <select>
+            <option>Languages</option>
+            <option>Web Development</option>
+            <option>Database</option>
+            <option>Soft Skills</option>
+          </select>
+          <button type="submit" class="btn-save">Add</button>
+        </section>
+
+        <section class="admin">
+          <h3>Update Contact Information</h3>
+
+          <input type="text" placeholder="Email" id="contact" />
+          <input type="text" placeholder="Phone" id="contact" />
+          <button type="submit" class="btn-save">Update</button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
