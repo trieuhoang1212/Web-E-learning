@@ -10,6 +10,7 @@ body {
 
 :root {
   /* size */
+  --size-back: 10px;
   --size-h2: 40px;
   --size-avt: 350px;
   /* font */
