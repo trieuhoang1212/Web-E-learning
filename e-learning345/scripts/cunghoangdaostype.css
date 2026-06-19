@@ -1,0 +1,123 @@
+:root {
+  /* Colors */
+  --background-color: #f9f6f0;
+  --card-bg: #ffffff;
+  --font-color: #4a3320;
+  --font-color-secondary: #8b5a2b;
+  --border-color: #d1c0a8;
+  --glow-effect: rgba(139, 90, 43, 0.4);
+
+  /* Sizes */
+  --size-h1: 60px;
+  --size-h4: 20px;
+  --size-radius: 200px;
+
+  /* Fonts */
+  --font-regular: 18px;
+  --font-menu: 16px;
+
+  /* Borders */
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 24px;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.menu-item {
+  font-size: var(--font-menu);
+  font-weight: bold;
+  border-bottom: 2px solid var(--border-color);
+  padding: 5px 10px;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+header h1 {
+  font-size: var(--size-h1);
+  color: var(--font-color);
+  margin: 0 0 10px 0;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--card-bg);
+  padding: 40px 60px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+}
+
+.container h2 {
+  margin-top: 0;
+  color: var(--font-color);
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input {
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-regular);
+  font-family: inherit;
+  width: 250px;
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+#btn-search {
+  background-color: var(--font-color-secondary);
+  color: var(--card-bg);
+  font-weight: bold;
+  font-size: var(--font-regular);
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: 12px 30px;
+}
