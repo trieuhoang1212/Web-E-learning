@@ -72,6 +72,13 @@ header h1 {
   letter-spacing: 2px;
 }
 
+header h4 {
+  font-weight: 300;
+  color: var(--font-color-secondary);
+  font-size: var(--size-h4);
+  margin-top: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -120,4 +127,12 @@ header h1 {
   border: none;
   border-radius: var(--border-radius-md);
   padding: 12px 30px;
+}
+
+.img-result {
+  margin-top: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 10px;
+  
 }
