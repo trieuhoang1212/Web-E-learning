@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng Ký Thông Tin</title>
+    <link rel="stylesheet" href="./dangkithongtinstype.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <p class="menu-item"><a href="homepage.html">Home</a></p>
+      <p class="menu-item">
+        <a href="cunghoangdaopage.html">Cung Hoàng Đạo</a>
+      </p>
+      <p class="menu-item"><a href="danhbapage.html">Danh Bạ</a></p>
+      <p class="menu-item">
+        <a href="dangkithongtinpage.html">Đăng Ký Thông Tin</a>
+      </p>
+      <p class="menu-item"><a href="thoitietpage.html">Thời Tiết</a></p>
+    </div>
+    <header>
+      <h1>ĐĂNG KÝ THÔNG TIN</h1>
+      <h4>NGUYỄN HOÀNG TRIỀU - 092205002523</h4>
+    </header>
+    <div class="container">
+      <h2>ĐĂNG KÝ THÔNG TIN CƯ CHÚ TRÚ CÔNG NHÂN</h2>
+      <form class="register-form" id="register-form">
+        <div class="form-group">
+          <label for="name">Họ, chữ đệm và tên khai sinh:</label>
+          <input
+            type="text"
+            id="name"
+            class="search-input"
+            placeholder="Nhập họ và tên..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="age">Ngày, tháng, năm sinh:</label>
+          <input
+            type="date"
+            id="date"
+            class="search-input"
+            placeholder="Nhập ngày, tháng, năm sinh..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="gender">Giới tính:</label>
+          <select class="search-input" id="gender">
+            <option>Chọn giới tính</option>
+            <option>Nam</option>
+            <option>Nữ</option>
+            <option>Khác</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="id-number">Số định danh cá nhân:</label>
+          <input
+            type="text"
+            id="id-number"
+            class="search-input"
+            placeholder="Nhập số định danh cá nhân..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại liên hệ:</label>
+          <input
+            type="text"
+            id="phone"
+            class="search-input"
+            placeholder="Nhập số điện thoại..."
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="search-input"
+            placeholder="Nhập email..."
+          />
+        </div>
+        <div><h3>Địa chỉ cư chú:</h3></div>
+        <div class="form-group">
+          <label for="province">Tỉnh/Thành:</label>
+          <select id="province" class="search-input">
+            <option value="">-- Chọn Tỉnh/Thành phố --</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ward">Phường/Xã:</label>
+          <select id="ward" class="search-input">
+            <option value="">-- Chọn Phường/Xã --</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="address">Số nhà/Đường:</label>
+          <input
+            type="text"
+            id="address"
+            class="search-input"
+            placeholder="Nhập số nhà, tên đường..."
+          />
+        </div>
+        <button type="submit" id="btn-search">XÁC NHẬN ĐĂNG KÝ</button>
+      </form>
+      <div id="result-card"></div>
+    </div>
+  </body>
+  <script src="./dangkithongtin.js"></script>
+</html>
