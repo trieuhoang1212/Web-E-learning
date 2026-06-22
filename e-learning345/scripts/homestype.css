@@ -88,7 +88,9 @@ header h4 {
 }
 
 .text-content {
+  width: 250px; 
   text-align: center;
+  word-wrap: break-word;
   font-size: var(--font-menu);
 }
 
