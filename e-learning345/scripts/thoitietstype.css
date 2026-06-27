@@ -13,7 +13,6 @@
   --size-radius: 200px;
 
   /* Fonts */
-  --font-input: 14px;
   --font-regular: 18px;
   --font-menu: 16px;
 
@@ -34,21 +33,6 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-}
-
-.menu {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-.menu-item {
-  font-size: var(--font-menu);
-  font-weight: bold;
-  border-bottom: 2px solid var(--border-color);
-  padding: 5px 10px;
 }
 
 a {
@@ -93,57 +77,4 @@ header h4 {
 .container h2 {
   margin-top: 0;
   color: var(--font-color);
-}
-
-.search-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.form-group {
-  display: flex;
-  font-size: var(--font-regular);
-  align-items: center;
-  padding: 15px;
-  gap: 50px;
-  justify-content: space-between;
-}
-
-.search-input {
-  padding: 12px 15px;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius-md);
-  font-size: var(--font-input);
-  font-family: inherit;
-  width: 300px;
-  color: var(--font-color);
-  background-color: var(--background-color);
-}
-
-#btn-search {
-  background-color: var(--font-color-secondary);
-  color: var(--card-bg);
-  font-weight: bold;
-  font-size: var(--font-regular);
-  border: none;
-  border-radius: var(--border-radius-md);
-  padding: 12px 30px;
-}
-
-#btn-search:hover {
-  background-color: var(--font-color);
-  color: var(--card-bg);
-  cursor: pointer;
-}
-
-.result-card {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: var(--card-bg);
-  border: 2px dashed var(--font-color-secondary);
-  border-radius: var(--border-radius-md);
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
 }

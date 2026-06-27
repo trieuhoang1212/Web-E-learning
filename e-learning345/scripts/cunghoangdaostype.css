@@ -35,21 +35,6 @@ body {
   min-height: 100vh;
 }
 
-.menu {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-.menu-item {
-  font-size: var(--font-menu);
-  font-weight: bold;
-  border-bottom: 2px solid var(--border-color);
-  padding: 5px 10px;
-}
-
 a {
   text-decoration: none;
   color: var(--font-color);
