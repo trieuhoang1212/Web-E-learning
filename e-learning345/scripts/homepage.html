@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <body>
+  <body id="top">
     <header>
       <h1>LẬP TRÌNH WEB</h1>
       <h4>NGUYỄN HOÀNG TRIỀU - 092205002523</h4>
@@ -17,7 +17,7 @@
 
     <main>
       <div class="menu">
-        <a href="cunghoangdaopage.html" class="menu-item">
+        <a href="#iframe-cunghoangdao" class="menu-item">
           <img
             src="../imgs/12cunghoangdao.jpg"
             alt="Cung hoàng đạo"
@@ -29,7 +29,7 @@
           </div>
         </a>
 
-        <a href="danhbapage.html" class="menu-item">
+        <a href="#iframe-danhba" class="menu-item">
           <img src="../imgs/danhba.jpg" alt="Danh bạ" class="img_menu" />
           <div class="text-content">
             <div class="test">Bài 2:</div>
@@ -37,7 +37,7 @@
           </div>
         </a>
 
-        <a href="dangkithongtinpage.html" class="menu-item">
+        <a href="#iframe-dangky" class="menu-item">
           <img
             src="../imgs/dangkithongtin.jpg"
             alt="Đăng ký thông tin"
@@ -49,7 +49,7 @@
           </div>
         </a>
 
-        <a href="thoitietpage.html" class="menu-item">
+        <a href="#iframe-thoitiet" class="menu-item">
           <img src="../imgs/thoitiet.jpg" alt="Thời tiết" class="img_menu" />
           <div class="text-content">
             <div class="test">Bài 3:</div>
@@ -58,8 +58,8 @@
         </a>
       </div>
     </main>
-    <!-- cung hoang dao -->
     <iframe
+      id="iframe-cunghoangdao"
       src="cunghoangdaopage.html"
       width="100%"
       height="1000px"
@@ -67,7 +67,9 @@
       style="border: none"
     >
     </iframe>
+
     <iframe
+      id="iframe-danhba"
       src="danhbapage.html"
       width="100%"
       height="4300px"
@@ -75,13 +77,29 @@
       style="border: none"
     >
     </iframe>
+
     <iframe
+      id="iframe-dangky"
       src="dangkithongtinpage.html"
       width="100%"
-      height="1600px"
+      height="1200px"
       scrolling="no"
       style="border: none"
     >
     </iframe>
+
+    <iframe
+      id="iframe-thoitiet"
+      src="thoitietpage.html"
+      width="100%"
+      height="1000px"
+      scrolling="no"
+      style="border: none"
+    >
+    </iframe>
+
+    <a class="top-arrow" href="#top" aria-label="Lên đầu trang">
+      <img src="../imgs/top_arrow.png" alt="Lên đầu trang" />
+    </a>
   </body>
 </html>
