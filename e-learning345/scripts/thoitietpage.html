@@ -16,18 +16,23 @@
     <!-- nhập tên thành phố -->
 
     <div class="container">
-      <div class="search-form">
+      <h2>Nhập tên thành phố của bạn</h2>
+      
+      <form class="search-form" onsubmit="event.preventDefault();">
         <div class="form-group">
-          <label for="city">Tên thành phố:</label>
+          <label for="city">Thành phố:</label>
           <input
             type="text"
             id="city"
             class="search-input"
-            placeholder="Nhập tên thành phố..."
+            placeholder="vd: Hanoi, Tokyo..."
           />
         </div>
-        <button id="btn-search" class="search-button">Tìm Kiếm</button>
-      </div>
+        <button type="button" id="btn-search">TÌM KIẾM</button>
+      </form>
+
+      <div id="weather-result" class="weather-result"></div>
+    </div>
     </div>
     <script src="thoitiet.js"></script>
   </body>
